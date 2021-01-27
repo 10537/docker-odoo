@@ -1,4 +1,4 @@
-FROM ubuntu:20.04
+FROM debian:stretch-slim
 MAINTAINER Odoo S.A. <info@odoo.com>
 
 SHELL ["/bin/bash", "-xo", "pipefail", "-c"]
