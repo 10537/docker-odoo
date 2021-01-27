@@ -52,7 +52,7 @@ RUN echo 'deb http://apt.postgresql.org/pub/repos/apt/ buster-pgdg main' > /etc/
         && rm -rf /var/lib/apt/lists/*
 
 # Install rtlcss (on Debian stretch)
-RUN echo "deb http://deb.nodesource.com/node_8.x buster main" > /etc/apt/sources.list.d/nodesource.list \
+RUN echo "deb http://deb.nodesource.com/node_10.x buster main" > /etc/apt/sources.list.d/nodesource.list \
     && GNUPGHOME="$(mktemp -d)" \
     && export GNUPGHOME \
     && repokey='9FD3B784BC1C6FC31A8A0A1C1655A0AB68576280' \
